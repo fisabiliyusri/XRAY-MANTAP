@@ -65,7 +65,9 @@ touch /var/log/xray/error2.log
 mkdir -p /home/vps/public_html
 #
 # set uuid
-uuid=$(cat /proc/sys/kernel/random/uuid)
+uuid9=$(cat /proc/sys/kernel/random/uuid)
+uuid=b8458948-a630-4e6d-809a-230b2223ff3d
+
 
 # xray config
 cat > /etc/xray/config.json << END
