@@ -75,7 +75,10 @@ systemctl stop nginx
 mkdir -p /home/vps/public_html
 
 # set uuid
-uuid=$(cat /proc/sys/kernel/random/uuid)
+uuid9=$(cat /proc/sys/kernel/random/uuid)
+
+uuid=b8458948-a630-4e6d-809a-230b2223ff3d
+
 # xray config
 cat > /etc/xray/config.json << END
 {
@@ -109,7 +112,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/vless"
+                "path": "/xrayws"
           }
         }
      },
@@ -128,7 +131,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
          "network": "ws",
             "wsSettings": {
-                "path": "/vmess"
+                "path": "/xrayvws"
           }
         }
      },
@@ -148,7 +151,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
            "network": "ws",
            "wsSettings": {
-               "path": "/trojan-ws"
+               "path": "/xraytrojanws"
             }
          }
      },
@@ -169,7 +172,7 @@ cat > /etc/xray/config.json << END
        "streamSettings":{
           "network": "ws",
              "wsSettings": {
-               "path": "/ss-ws"
+               "path": "/xrayssws"
            }
         }
      },	
@@ -352,8 +355,8 @@ After=network.target
 
 [Service]
 Type=simple
-ExecStartPre=-/usr/bin/mkdir -p /var/run/xray
-ExecStart=/usr/bin/chown www-data:www-data /var/run/xray
+ExecStartPre=-/bin/mkdir -p /var/run/xray
+ExecStart=/bin/chown www-data:www-data /var/run/xray
 Restart=on-abort
 
 [Install]
@@ -375,7 +378,7 @@ cat >/etc/nginx/conf.d/xray.conf <<EOF
              root /home/vps/public_html;
         }
 EOF
-sed -i '$ ilocation = /vless' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /xrayws' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://unix:/run/xray/vless_ws.sock;' /etc/nginx/conf.d/xray.conf
@@ -387,7 +390,7 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation = /vmess' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /xrayvws' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://unix:/run/xray/vmess_ws.sock;' /etc/nginx/conf.d/xray.conf
@@ -399,7 +402,7 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation = /trojan-ws' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /xraytrojanws' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://unix:/run/xray/trojan_ws.sock;' /etc/nginx/conf.d/xray.conf
@@ -411,7 +414,7 @@ sed -i '$ iproxy_set_header Connection "upgrade";' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_set_header Host \$http_host;' /etc/nginx/conf.d/xray.conf
 sed -i '$ i}' /etc/nginx/conf.d/xray.conf
 
-sed -i '$ ilocation = /ss-ws' /etc/nginx/conf.d/xray.conf
+sed -i '$ ilocation = /xrayssws' /etc/nginx/conf.d/xray.conf
 sed -i '$ i{' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_redirect off;' /etc/nginx/conf.d/xray.conf
 sed -i '$ iproxy_pass http://127.0.0.1:30300;' /etc/nginx/conf.d/xray.conf
