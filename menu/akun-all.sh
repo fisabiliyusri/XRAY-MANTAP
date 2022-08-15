@@ -285,40 +285,40 @@ END
 #
 #buatvmess
 clear
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "====== XRAY MANTAP Multi Port======="
-echo -e "INFORMASI AKUN VPN XRAY"" | tee -a /etc/log-create-user.log
-echo -e "IP: $MYIP"
-echo -e "Host/Domain: $domain"" | tee -a /etc/log-create-user.log
-echo -e "Password/ID: $uuid"
-echo -e "====== Service Port ======="
-echo -e "Websocket TLS  : 443"
-echo -e "Websocket HTTP : 80"
-echo -e "GRPC TLS       : 443"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+echo -e "====== XRAY MANTAP Multi Port=======" | tee -a /etc/log-create-user.log
+echo -e "INFORMASI AKUN VPN XRAY" | tee -a /etc/log-create-user.log
+echo -e "IP: $MYIP" | tee -a /etc/log-create-user.log
+echo -e "Host/Domain: $domain" | tee -a /etc/log-create-user.log
+echo -e "Password/ID: $uuid" | tee -a /etc/log-create-user.log
+echo -e "====== Service Port =======" | tee -a /etc/log-create-user.log
+echo -e "Websocket TLS  : 443" | tee -a /etc/log-create-user.log
+echo -e "Websocket HTTP : 80" | tee -a /etc/log-create-user.log
+echo -e "GRPC TLS       : 443" | tee -a /etc/log-create-user.log
 echo -e "*Note OPOK: opok only supports coremeta"
 echo -e "*Note SHADOWSOCKS: gunakan custom config atau plugin xray"
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "Protokol VPN: TROJAN"
-echo -e "Network: WS/GRPC"
-echo -e "====== Path ======="
-echo -e "=> WS TLS : /xraytrojanws"
-echo -e "=> GRPC   : trojan-grpc"
-echo -e "=> OPOK   : ws://bugcom/xraytrojanws"
-echo -e "====== Import Config From Clipboard ======="
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+echo -e "Protokol VPN: TROJAN" | tee -a /etc/log-create-user.log
+echo -e "Network: WS/GRPC" | tee -a /etc/log-create-user.log
+echo -e "====== Path =======" | tee -a /etc/log-create-user.log
+echo -e "=> WS TLS : /xraytrojanws" | tee -a /etc/log-create-user.log
+echo -e "=> GRPC   : trojan-grpc" | tee -a /etc/log-create-user.log
+echo -e "=> OPOK   : ws://bugcom/xraytrojanws" | tee -a /etc/log-create-user.log
+echo -e "====== Import Config From Clipboard =======" | tee -a /etc/log-create-user.log
 echo -e "Link Config WS TLS   : $trojanlinkws" | tee -a /etc/log-create-user.log
 echo -e "Link Config GRPC TLS : $trojanlinkgrpc" | tee -a /etc/log-create-user.log
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "Protokol VPN: SHADOWSOCKS"
-echo -e "Network: WS/GRPC"
-echo -e "Method Cipers : aes-128-gcm"
-echo -e "====== Path ======="
-echo -e "=> WS TLS : /xrayssws"
-echo -e "=> GRPC   : ss-grpc"
-echo -e "=> OPOK   : ws://bugcom/xrayssws"
-echo -e "======Custom Import Config From URL ======="
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+echo -e "Protokol VPN: SHADOWSOCKS" | tee -a /etc/log-create-user.log
+echo -e "Network: WS/GRPC" | tee -a /etc/log-create-user.log
+echo -e "Method Cipers : aes-128-gcm" | tee -a /etc/log-create-user.log
+echo -e "====== Path =======" | tee -a /etc/log-create-user.log
+echo -e "=> WS TLS : /xrayssws" | tee -a /etc/log-create-user.log
+echo -e "=> GRPC   : ss-grpc" | tee -a /etc/log-create-user.log
+echo -e "=> OPOK   : ws://bugcom/xrayssws" | tee -a /etc/log-create-user.log
+echo -e "======Custom Import Config From URL =======" | tee -a /etc/log-create-user.log
 echo -e "URL Custom Config WS TLS   : http://${domain}:81/ss-ws-$user.txt" | tee -a /etc/log-create-user.log
 echo -e "URL Custom Config GRPC TLS : http://${domain}:81/ss-grpc-$user.txt" | tee -a /etc/log-create-user.log
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 echo -e "Protokol VPN: VLESS"
 echo -e "Network: WS/GRPC"
 echo -e "====== Path ======="
