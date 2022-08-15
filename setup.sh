@@ -35,7 +35,7 @@ echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━�
 sleep 2
 clear
 
-https://raw.githubusercontent.com/adamfuadia/testxray/main/ins-xray.sh
+https://raw.githubusercontent.com/adamfuadia/testxray/main/install-xray.sh
 #SELESAI
 echo " "
 echo "Installation has been completed!!"echo " "
