@@ -149,5 +149,5 @@ CF_KEY=dd2c5e0313f122b3c1833471d469b1025f492
 https://dash.cloudflare.com/profile/api-tokens
 - API Keys ,Global API Key, Klik View, Masukan Password kamu, lalu klik View
 - nanti muncul Your API Key ,lalu tinggal di salin/copy
-* wajib punya domain
+
 
