@@ -67,7 +67,7 @@ bash -c "$(curl -L https://github.com/XTLS/Xray-install/raw/main/install-release
 
 ## crt xray
 systemctl stop nginx
-
+rm -rf /etc/nginx/conf.d/alone.conf
 
 # nginx 
 /etc/init.d/nginx stop
