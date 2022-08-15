@@ -40,8 +40,8 @@ echo "║ 14.Keluar Dari Menu       ┃ Exit Menu                            ║
 echo "║ 15.Info Script            ┃                                      ║"
 echo "║ 16.Auto Pointing Subdomain┃                                      ║"
 echo "╚═════════════════════════════════════════════════════════════════╝" 
-read -p "     Select From Options [1-69 or x] :  " menu
-case $menu in 
+read -p "     Select From Options [1-69 or x] :  " xmenu
+case $xmenu in 
 1)
 add-akun
 ;;
