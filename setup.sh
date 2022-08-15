@@ -26,27 +26,12 @@ clear
 mkdir /var/lib/crot;
 echo "IP=" >> /var/lib/crot/ipvps.conf
 cd
-#Instal Xray
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green          Install XRAY MANTAP              $NC"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-sleep 2
-clear
-wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/install-xray.sh && chmod +x install-xray.sh && screen -S xray ./install-xray.sh
 #install tools/alat
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green      Install Tools/Alat               $NC"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-sleep 2
-clear
 wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/install-tools.sh && chmod +x install-tools.sh && ./install-tools.sh
 #
+#Instal Xray
+wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/install-xray.sh && chmod +x install-xray.sh && ./install-xray.sh
 #install xmenu
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-echo -e "$green      Install xmenu               $NC"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
-sleep 2
-clear
 wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
 #
 #SELESAI
@@ -55,9 +40,9 @@ echo "Installation has been completed!!"echo " "
 echo "============================================================================" | tee -a log-install.txt
 echo "" | tee -a log-install.txt
 echo "----------------------------------------------------------------------------" | tee -a log-install.txt
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  | tee -a log-install.txt
-echo -e "$green      SCRIPT MANTAP-XRAY Multi Port         $NC"  | tee -a log-install.txt
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"  | tee -a log-install.txt
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"  | tee -a log-install.txt
+echo -e "    SCRIPT MANTAP-XRAY Multi Port"  | tee -a log-install.txt
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"  | tee -a log-install.txt
 echo ""  | tee -a log-install.txt
 echo "   >>> Service & Port"  | tee -a log-install.txt
 echo "   - Nginx                      : 89"  | tee -a log-install.txt
