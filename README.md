@@ -22,6 +22,12 @@
 - VLESS GRPC       : **80**
 
 
+# Syarat && Bahan Untuk Menggunakan Script Ini
+- Wajib Punya VPS
+- Wajib Punya Akun Cloudflare
+- Wajib Punya Domain Punya Kamu Sendiri
+- *** Jika Semua Syarat dan Bahan sudah terpenuhi ,silahkan di coba script ini
+
 # Settingan Di Cloudflare
 1. Buat VPS Baru
 2. Pointing Dulu Domain Kamu, Kalo sudah pernah di pointing
