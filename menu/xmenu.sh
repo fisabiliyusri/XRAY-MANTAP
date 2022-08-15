@@ -29,22 +29,22 @@ echo "╚═══════════════════════�
 read -p "     Select From Options [1-69 or x] :  " menu
 case $menu in 
 1)
-menu-ws
+add-akun
 ;;
 2)
-menu-trojan
+delete-akun
 ;;
 3)
-menu-vless
+cat /root/domain
 ;;
 4)
-menu-vmess
+curl -s ipinfo.io/ip
 ;;
 5)
-menu-ss
+updatedll
 ;;
 6)
-menu-socks
+updatecore
 ;;
 7)
 updatesc
@@ -59,7 +59,7 @@ xraycert
 add-domain
 ;;
 11)
-pointing
+how-pointing
 ;;
 12)
 speedtest
@@ -69,6 +69,12 @@ reboot
 ;;
 14)
 exit
+;;
+15)
+cat /root/log-install.txt
+;;
+16)
+auto-pointing
 ;;
 *)
 echo "Input The Correct Number !"
