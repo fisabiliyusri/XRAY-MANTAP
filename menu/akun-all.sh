@@ -78,9 +78,6 @@ trojanlinkws="trojan://${uuid}@${domain}:443?path=/xraytrojanws&security=tls&hos
 #buatshadowsocks
 #
 cipher="aes-128-gcm"
-uuid=$(cat /proc/sys/kernel/random/uuid)
-read -p "Expired (days): " masaaktif
-exp=`date -d "$masaaktif days" +"%Y-%m-%d"`
 sed -i '/#ssws$/a\### '"$user $exp"'\
 },{"password": "'""$uuid""'","method": "'""$cipher""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#ssgrpc$/a\### '"$user $exp"'\
