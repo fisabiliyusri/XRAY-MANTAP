@@ -9,6 +9,7 @@ wget -O updatedll "https://raw.githubusercontent.com/adamfuadia/testxray/main/me
 wget -O add-akun "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/add-akun.sh"
 wget -O delete-akun "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/delete-akun.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray/certv2ray.sh"
+wget -O restart-xray "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/restart-xray.sh"
 
 #
 chmod +x add-akun
@@ -16,5 +17,6 @@ chmod +x delete-akun
 chmod +x updatedll
 chmod +x add-akun
 chmod +x certv2ray
+chmod +x restart-xray
 
 cd
