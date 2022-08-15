@@ -26,7 +26,7 @@
 - Wajib Punya VPS
 - Wajib Punya Akun Cloudflare
 - Wajib Punya Domain Punya Kamu Sendiri
-- *** Jika Semua Syarat dan Bahan sudah terpenuhi ,silahkan di coba script ini
+- ***Jika semua syarat dan Bahan sudah terpenuhi ,silahkan di coba script ini***
 
 # Settingan Di Cloudflare
 1. Buat VPS Baru
