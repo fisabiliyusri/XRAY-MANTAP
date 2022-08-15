@@ -18,6 +18,15 @@ PURPLE='\033[0;35m'
 CYAN='\033[0;36m'
 LIGHT='\033[0;37m'
 # =========================================
+# Getting
+MYIP=$(wget -qO- ipinfo.io/ip);
+echo "Checking VPS"
+IZIN=$(wget -qO- ipinfo.io/ip);
+
+rm -f setup.sh
+clear
+mkdir /var/lib/crot;
+echo "IP=" >> /var/lib/crot/ipvps.conf
 cd
 #install tools/alat
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
