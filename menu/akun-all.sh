@@ -69,9 +69,9 @@ echo -e "====== Path ======="
 echo -e "=> WS TLS : /xrayssws"
 echo -e "=> GRPC   : ss-grpc"
 echo -e "=> OPOK   : ws://bugcom/xrayssws"
-echo -e "====== Import Config From Clipboard ======="
-echo -e "URL Config WS TLS    :
-echo -e "URL Config GRPC TLS  : 
+echo -e "======Custom Import Config From Clipboard ======="
+echo -e "URL Custom Config WS TLS    :
+echo -e "URL Custom Config GRPC TLS  : 
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "Protokol VPN: VLESS"
 echo -e "Network: WS/GRPC"
