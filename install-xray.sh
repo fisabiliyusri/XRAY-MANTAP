@@ -501,4 +501,5 @@ yellow "xray/Shadowsocks"
 
 #done
 clear
-#rm -f ins-xray.sh  
+#rm -f ins-xray.sh
+rm -f install-xray.sh
