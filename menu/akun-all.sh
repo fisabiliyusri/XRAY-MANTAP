@@ -319,21 +319,22 @@ echo -e "======Custom Import Config From URL =======" | tee -a /etc/log-create-u
 echo -e "URL Custom Config WS TLS   : http://${domain}:81/ss-ws-$user.txt" | tee -a /etc/log-create-user.log
 echo -e "URL Custom Config GRPC TLS : http://${domain}:81/ss-grpc-$user.txt" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
-echo -e "Protokol VPN: VLESS"
-echo -e "Network: WS/GRPC"
-echo -e "====== Path ======="
-echo -e "=> WS TLS : /xrayws"
-echo -e "=> GRPC   : vless-grpc"
-echo -e "=> OPOK   : ws://bugcom/xrayws"
-echo -e "====== Import Config From Clipboard ======="
-echo -e "Link Config WS TLS    : $vlesslinkws
-echo -e "Link Config GRPC TLS  : $vlesslinkgrpc
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
-echo -e "Protokol VPN: VMESS"
-echo -e "Alter ID: 0"
-echo -e "Network: WS/GRPC"
-echo -e "====== Path ======="
-echo -e "=> WS TLS : /xrayvws"
-echo -e "=> GRPC   : vmess-grpc"
-echo -e "=> OPOK   : ws://bugcom/xrayvws"
-echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
+echo -e "Protokol VPN: VLESS" | tee -a /etc/log-create-user.log
+echo -e "Network: WS/GRPC" | tee -a /etc/log-create-user.log
+echo -e "====== Path =======" | tee -a /etc/log-create-user.log
+echo -e "=> WS TLS : /xrayws" | tee -a /etc/log-create-user.log
+echo -e "=> GRPC   : vless-grpc" | tee -a /etc/log-create-user.log
+echo -e "=> OPOK   : ws://bugcom/xrayws" | tee -a /etc/log-create-user.log
+echo -e "====== Import Config From Clipboard =======" | tee -a /etc/log-create-user.log
+echo -e "Link Config WS TLS    : $vlesslinkws" | tee -a /etc/log-create-user.log
+echo -e "Link Config GRPC TLS  : $vlesslinkgrpc" | tee -a /etc/log-create-user.log
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+echo -e "Protokol VPN: VMESS" | tee -a /etc/log-create-user.log
+echo -e "Alter ID: 0" | tee -a /etc/log-create-user.log
+echo -e "Network: WS/GRPC" | tee -a /etc/log-create-user.log
+echo -e "====== Path =======" | tee -a /etc/log-create-user.log
+echo -e "=> WS TLS : /xrayvws" | tee -a /etc/log-create-user.log
+echo -e "=> GRPC   : vmess-grpc" | tee -a /etc/log-create-user.log
+echo -e "=> OPOK   : ws://bugcom/xrayvws" | tee -a /etc/log-create-user.log
+echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+echo -e "SCRIPT MANTAP XRAY" | tee -a /etc/log-create-user.log
