@@ -339,10 +339,14 @@ Description=Mampus-Anjeng
 After=network.target
 
 [Service]
-Type=simple
+User=root
+CapabilityBoundingSet=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_ADMIN CAP_NET_BIND_SERVICE
+NoNewPrivileges=true
 ExecStartPre=-/usr/bin/mkdir -p /var/run/xray
 ExecStart=/usr/bin/chown www-data:www-data /var/run/xray
-Restart=on-abort
+Restart=on-failure
+RestartPreventExitStatus=23
 
 [Install]
 WantedBy=multi-user.target
