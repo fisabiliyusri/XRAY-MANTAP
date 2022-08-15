@@ -79,3 +79,6 @@ cd
 rm -rf updatedll
 rm -rf updatedll.sh
 rm -rf setup.sh
+rm -rf install-xray.sh
+rm -rf install-tools.sh
+
