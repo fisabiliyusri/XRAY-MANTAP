@@ -8,12 +8,15 @@ upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
 uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
 cekup=`uptime -p | grep -ow "day"`
 IPVPS=$(curl -s ipinfo.io/ip )
+ISPVPS=$( curl -s ipinfo.io/org )
+#clear
 if [ "$cekup" = "day" ]; then
-echo -e   "System Uptime   :  $uphours $upminutes $uptimecek"
+echo -e "System Uptime   :  $uphours $upminutes $uptimecek"
 else
-echo -e   "System Uptime   :  $uphours $upminutes"
+echo -e "System Uptime   :  $uphours $upminutes"
 fi
 echo -e "IP-VPS          :  $IPVPS"
+echo -e "ISP-VPS         :  $ISPVPS"
 echo "╔═════════════════════════════════════════════════════════════════╗"
 echo "║                     ┃ Script By SL ┃                                       ║" 
 echo "╚═════════════════════════════════════════════════════════════════╝"
