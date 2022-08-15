@@ -68,27 +68,9 @@ ln -fs /usr/share/zoneinfo/Asia/Jakarta /etc/localtime
 
 # set locale
 sed -i 's/AcceptEnv/#AcceptEnv/g' /etc/ssh/sshd_config
-
-#alat
-sudo apt update -y
-sudo apt update -y
-sudo apt dist-upgrade -y
-sudo apt-get remove --purge ufw firewalld -y 
-sudo apt-get remove --purge exim4 -y 
-
-
-sudo apt install -y screen curl jq bzip2 gzip coreutils rsyslog iftop \
- htop zip unzip net-tools sed gnupg gnupg1 \
- bc sudo apt-transport-https build-essential dirmngr libxml-parser-perl neofetch screenfetch git lsof \
- openssl openvpn easy-rsa fail2ban tmux \
- vnstat \
- dropbear  libsqlite3-dev \
- socat cron bash-completion ntpdate xz-utils sudo apt-transport-https \
- gnupg2 dnsutils lsb-release chrony
-
+ 
 #alat
 sudo apt install -y libnss3-dev libnspr4-dev pkg-config libpam0g-dev libcap-ng-dev libcap-ng-utils libselinux1-dev libcurl4-nss-dev flex bison make libnss3-tools libevent-dev xl2tpd pptpd
-
 #update
 apt update -y
 apt upgrade -y
