@@ -63,7 +63,17 @@ EOF
 ```
 
 ```
-4. jika sudah selesai, ketik xmenu untuk menampilkan menu
+4. jika proses install sudah selesai,lalu hidupkan ulang vps nya/ reboot
+```
+reboot
+```
+
+5. jika sudah selesai,login ke dalam vps kamu,lalu ketik xmenu untuk menampilkan menu
 ```
 xmenu
 ```
+
+# Cara Pointing Domain Di Cloudflare
+- Loading ...
+# Cara Auto Pointing Subdomain Secara Otomatis Di Cloudflare
+- Loading ...
