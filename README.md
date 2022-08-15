@@ -128,4 +128,26 @@ xmenu
 https://youtu.be/Pwfvwy5Ghcw
 ```
 # Cara Pointing Subdomain Secara Otomatis Di Cloudflare Menggunakan Script
-- Loading ...
+- edit dulu script auto-pointing nya
+```
+nano /usr/bin/auto-pointing
+```
+- contoh punya aku
+- tinggal ubah saja yg mantapxsl.my.id menjadi domain punya kamu
+```
+DOMAIN=mantapxsl.my.id
+SUB_DOMAIN=onichan-${sub}.mantapxsl.my.id
+NS_DOMAIN=zerosl-${sub}.mantapxsl.my.id
+CF_ID=slinfinity69@gmail.com
+CF_KEY=dd2c5e0313f122b3c1833471d469b1025f492
+```
+- Lalu ubah juga CF_ID= isi dengan alamat email cloudflare kamu
+- CF_KEY= isi dengan YOUR API KEY (GLOBAL API KEY)
+
+# Cara Mendapatkan API KEY CLOUDFLARE
+- Link
+https://dash.cloudflare.com/profile/api-tokens
+- API Keys ,Global API Key, Klik View, Masukan Password kamu, lalu klik View
+- nanti muncul Your API Key ,lalu tinggal di salin/copy
+* wajib punya domain
+
