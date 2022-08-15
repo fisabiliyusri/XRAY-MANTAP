@@ -81,5 +81,5 @@ xmenu
 
 # Cara Pointing Domain Di Cloudflare
 - Loading ...
-# Cara Auto Pointing Subdomain Secara Otomatis Di Cloudflare
+# Cara Pointing Subdomain Secara Otomatis Di Cloudflare
 - Loading ...
