@@ -1,3 +1,7 @@
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=SCRIPT+XRAY+MANTAP" />
+</p>
+
 # XRAY MANTAP
 - ***Script XRAY Multi Port 443/80 By SL***
 
@@ -45,10 +49,25 @@
 # Cara Install Script Nya
 - Login ke VPS kamu ( wajib pake user ***root***)
 1. MASUK KE VPS LALU KETIK
+
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=sudo+su" />
+</p>
+
+
 ```
 sudo su
 ```
+
 2. Update Dulu VPS NYA
+
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=apt-get+update" />
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=apt-get+upgrade+-y" />
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=update-grub+&&+reboot" />
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=reboot" />
+</p>
+
 ```
 apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
 ```
@@ -76,6 +95,10 @@ EOF
 wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 6. jika sudah selesai,lalu ketik xmenu untuk menampilkan menu
+<p align="center">
+<img src="https://readme-typing-svg.herokuapp.com?color=%2336BCF7&center=true&vCenter=true&lines=xmenu" />
+</p>
+
 ```
 xmenu
 ```
