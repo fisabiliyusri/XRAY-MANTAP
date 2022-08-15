@@ -70,7 +70,7 @@ updatesc
 restart-xray
 ;;
 9)
-xraycert
+certv2ray
 ;;
 10)
 add-domain
