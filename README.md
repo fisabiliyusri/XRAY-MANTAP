@@ -117,10 +117,23 @@ wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/setup.sh &
 xmenu
 ```
 7. DONE / SELESAI
+
+- ***NOTE***
+- jika xray dan nginx mengalami error !
+- ketik
+```
+certv2ray
+```
+lalu ketik
+```
+restart-xray
+```
+
 # INFO KODE SCRIPT
 - xmenu (untuk menampilkan menu
 - updatedll (untuk update sc)
-- ...
+- restart-xray (hidupkan ulang xray)
+- certv2ray (Perbarui Sertifikat / Update Certificate)
 
 # Contoh Cara Pointing Domain ke Cloudflare
 - Link:
