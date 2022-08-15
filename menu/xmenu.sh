@@ -1,5 +1,19 @@
 #!/bin/bash
 clear
+echo -e "\e[36m╒════════════════════════════════════════════╕\033[0m"
+echo -e " \E[0;41;36m                 INFO SERVER                \E[0m"
+echo -e "\e[36m╘════════════════════════════════════════════╛\033[0m"
+uphours=`uptime -p | awk '{print $2,$3}' | cut -d , -f1`
+upminutes=`uptime -p | awk '{print $4,$5}' | cut -d , -f1`
+uptimecek=`uptime -p | awk '{print $6,$7}' | cut -d , -f1`
+cekup=`uptime -p | grep -ow "day"`
+IPVPS=$(curl -s ipinfo.io/ip )
+if [ "$cekup" = "day" ]; then
+echo -e   "System Uptime   :  $uphours $upminutes $uptimecek"
+else
+echo -e   "System Uptime   :  $uphours $upminutes"
+fi
+echo -e "IP-VPS          :  $IPVPS"
 echo "╔═════════════════════════════════════════════════════════════════╗"
 echo "║                     ┃ Script By SL ┃                                       ║" 
 echo "╚═════════════════════════════════════════════════════════════════╝"
@@ -35,7 +49,7 @@ add-akun
 delete-akun
 ;;
 3)
-cat /root/domain
+cat /etc/xray/domain
 ;;
 4)
 curl -s ipinfo.io/ip
