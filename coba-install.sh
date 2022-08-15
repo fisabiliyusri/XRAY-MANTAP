@@ -10,7 +10,7 @@
              ssl_ciphers EECDH+CHACHA20:EECDH+CHACHA20-draft:EECDH+ECDSA+AES128:EECDH+aRSA+AES128:RSA+AES128:EECDH+ECDSA+AES256:EECDH+aRSA+AES256:RSA+AES256:EECDH+ECDSA+3DES:EECDH+aRSA+3DES:RSA+3DES:!MD5;
              ssl_protocols TLSv1.1 TLSv1.2 TLSv1.3;
              root /home/vps/public_html;
-location = /vless
+location = /xrayws
 {
 proxy_redirect off;
 proxy_pass http://unix:/run/xray/vless_ws.sock;
@@ -21,7 +21,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 proxy_set_header Host $http_host;
 }
-location = /vmess
+location = /xrayvws
 {
 proxy_redirect off;
 proxy_pass http://unix:/run/xray/vmess_ws.sock;
@@ -32,7 +32,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 proxy_set_header Host $http_host;
 }
-location = /trojan-ws
+location = /xraytrojanws
 {
 proxy_redirect off;
 proxy_pass http://unix:/run/xray/trojan_ws.sock;
@@ -43,7 +43,7 @@ proxy_set_header Upgrade $http_upgrade;
 proxy_set_header Connection "upgrade";
 proxy_set_header Host $http_host;
 }
-location = /ss-ws
+location = /xrayssws
 {
 proxy_redirect off;
 proxy_pass http://127.0.0.1:30300;
