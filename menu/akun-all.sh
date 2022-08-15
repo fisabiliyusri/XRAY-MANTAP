@@ -40,18 +40,16 @@ sed -i '/#vless$/a\#& '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
-vlesslink1="vless://${uuid}@${domain}:$tls?path=/vlessws&security=tls&encryption=none&type=ws#${user}"
-vlesslink2="vless://${uuid}@${domain}:$none?path=/vlessws&encryption=none&type=ws#${user}"
-vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=vless-grpc&sni=bug.com#${user}"
 
 systemctl restart xray
-#buattrojan
-trojanlink1="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
-trojanlink="trojan://${uuid}@${domain}:443?path=%2Ftrojan-ws&security=tls&host=bug.com&type=ws&sni=bug.com#${user}"
 #buatvless
-vlesslink1="vless://${uuid}@${domain}:$tls?path=/vlessws&security=tls&encryption=none&type=ws#${user}"
-vlesslink2="vless://${uuid}@${domain}:$none?path=/vlessws&encryption=none&type=ws#${user}"
-vlesslink3="vless://${uuid}@${domain}:$tls?mode=gun&security=tls&encryption=none&type=grpc&serviceName=vless-grpc&sni=bug.com#${user}"
+vlesslinkws="vless://${uuid}@${domain}:443?path=/xrayws&security=tls&encryption=none&type=ws#${user}"
+vlesslinknon="vless://${uuid}@${domain}:80?path=/xrayws&encryption=none&type=ws#${user}"
+vlesslinkgrpc="vless://${uuid}@${domain}:443?mode=gun&security=tls&encryption=none&type=grpc&serviceName=vless-grpc&sni=bug.com#${user}"
+
+#buattrojan
+trojanlinkgrpc="trojan://${uuid}@${domain}:443?mode=gun&security=tls&type=grpc&serviceName=trojan-grpc&sni=bug.com#${user}"
+trojanlinkws="trojan://${uuid}@${domain}:443?path=/xraytrojanws&security=tls&host=bug.com&type=ws&sni=bug.com#${user}"
 #buatshadowsocks
 #
 cipher="aes-128-gcm"
@@ -176,8 +174,8 @@ cat > /home/vps/public_html/ss-ws-$user.txt <<-END
 "rules": []
   },
   "stats": {}
- }
-
+}
+END
 cat > /home/vps/public_html/ss-grpc-$user.txt <<-END
 {
     "dns": {
@@ -289,9 +287,9 @@ END
 clear
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "====== XRAY MANTAP Multi Port======="
-echo -e "INFORMASI AKUN VPN XRAY"
+echo -e "INFORMASI AKUN VPN XRAY"" | tee -a /etc/log-create-user.log
 echo -e "IP: $MYIP"
-echo -e "Host/Domain: $domain"
+echo -e "Host/Domain: $domain"" | tee -a /etc/log-create-user.log
 echo -e "Password/ID: $uuid"
 echo -e "====== Service Port ======="
 echo -e "Websocket TLS  : 443"
@@ -307,8 +305,8 @@ echo -e "=> WS TLS : /xraytrojanws"
 echo -e "=> GRPC   : trojan-grpc"
 echo -e "=> OPOK   : ws://bugcom/xraytrojanws"
 echo -e "====== Import Config From Clipboard ======="
-echo -e "Link Config WS TLS   :
-echo -e "Link Config GRPC TLS : 
+echo -e "Link Config WS TLS   : $trojanlinkws" | tee -a /etc/log-create-user.log
+echo -e "Link Config GRPC TLS : $trojanlinkgrpc" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "Protokol VPN: SHADOWSOCKS"
 echo -e "Network: WS/GRPC"
@@ -328,8 +326,8 @@ echo -e "=> WS TLS : /xrayws"
 echo -e "=> GRPC   : vless-grpc"
 echo -e "=> OPOK   : ws://bugcom/xrayws"
 echo -e "====== Import Config From Clipboard ======="
-echo -e "Link Config WS TLS    : 
-echo -e "Link Config GRPC TLS  : 
+echo -e "Link Config WS TLS    : $vlesslinkws
+echo -e "Link Config GRPC TLS  : $vlesslinkgrpc
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "Protokol VPN: VMESS"
 echo -e "Alter ID: 0"
