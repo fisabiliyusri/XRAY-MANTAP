@@ -9,7 +9,7 @@ red='\e[1;31m'
 green='\e[0;32m'
 yell='\e[1;33m'
 NC='\e[0m'
-echo "XRAY Core Vmess / Vless"
+echo "XRAY Core Vmess / Vless / Trojan / Shadowsocks"
 echo "Trojan"
 echo "Progress..."
 sleep 3
@@ -492,19 +492,11 @@ systemctl enable runn
 systemctl restart runn
 
 sleep 1
-wget -q -O /usr/bin/add-ws "https://raw.githubusercontent.com/apih46/mini/main/xray/add-ws.sh" && chmod +x /usr/bin/add-ws
-wget -q -O /usr/bin/add-vless "https://raw.githubusercontent.com/apih46/mini/main/xray/add-vless.sh" && chmod +x /usr/bin/add-vless
-wget -q -O /usr/bin/add-tr "https://raw.githubusercontent.com/apih46/mini/main/xray/add-tr.sh" && chmod +x /usr/bin/add-tr
-wget -q -O /usr/bin/del-user "https://raw.githubusercontent.com/apih46/mini/main/xray/del-ws.sh" && chmod +x /usr/bin/del-user
-wget -q -O /usr/bin/cek-user "https://raw.githubusercontent.com/apih46/mini/main/xray/cek-ws.sh" && chmod +x /usr/bin/cek-ws
-wget -q -O /usr/bin/renew-user "https://raw.githubusercontent.com/apih46/mini/main/xray/renew-ws.sh" && chmod +x /usr/bin/renew-user
-wget -q -O /usr/bin/crtv2ray "https://raw.githubusercontent.com/apih46/mini/main/xray/crt.sh" && chmod +x /usr/bin/crtv2ray
-wget -q -O /usr/bin/add-ssws "https://raw.githubusercontent.com/apih46/mini/main/xray/add-ssws.sh" && chmod +x /usr/bin/add-ssws
-sleep 1
 yellow() { echo -e "\\033[33;1m${*}\\033[0m"; }
 yellow "xray/Vmess"
 yellow "xray/Vless"
-
+yellow "xray/Trojan"
+yellow "xray/Shadowsocks"
 
 
 #done
