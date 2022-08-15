@@ -44,11 +44,17 @@
 3. Setting Di Cloudflare Selesai
 # Cara Install Script Nya
 - Login ke VPS kamu ( wajib pake user ***root***)
-1. masuk ke vps lalu ketik
+1. MASUK KE VPS LALU KETIK
 ```
 sudo su
 ```
-2. Masukan Nama Domain Kamu, domain harus aktif
+2. Update Dulu VPS NYA
+```
+apt-get update && apt-get upgrade -y && update-grub && sleep 2 && reboot
+```
+- Otomatis Akan Reboot/ Hidupkan Ulang
+3. Login Lagi Ke VPS NYA
+4. Masukan Nama Domain Kamu, domain harus aktif
 - contoh nama domain punya aku,silahkan ganti dengan punya kamu
 ```
 cat >/root/domain <<EOF
@@ -63,21 +69,22 @@ mantapxsl.my.id
 EOF
 ```
 
-3. Salin kode di bawah ini dan paste kan ke dalam vps punya kamu
+5. Salin kode di bawah ini dan paste kan ke dalam vps punya kamu
 - maka proses install akan berjalan, jangan keluar dari vps
 - jika keluar dari vps saat lagi proses install,maka akan gagal
 ```
-
+rm -f setup.sh && apt update && apt upgrade -y && update-grub && sleep 2 && apt-get update -y && apt install -y bzip2 gzip coreutils screen curl unzip && wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/setup.sh && chmod +x setup.sh && sed -i -e 's/\r$//' setup.sh && screen -S setup ./setup.sh
+  
 ```
-4. jika proses install sudah selesai,lalu hidupkan ulang vps nya/ reboot
-```
-reboot
-```
-
-5. jika sudah selesai,login ke dalam vps kamu,lalu ketik xmenu untuk menampilkan menu
+6. jika sudah selesai,lalu ketik xmenu untuk menampilkan menu
 ```
 xmenu
 ```
+7. DONE / SELESAI
+# INFO KODE SCRIPT
+- xmenu (untuk menampilkan menu
+- updatedll (untuk update sc)
+- ...
 
 # Cara Pointing Domain Di Cloudflare
 - Loading ...
