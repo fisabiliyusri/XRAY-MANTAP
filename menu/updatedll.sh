@@ -7,7 +7,7 @@ cd /usr/bin
 wget -O add-akun "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/add-akun.sh"
 wget -O updatedll "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/updatedll.sh"
 wget -O add-akun "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/add-akun.sh"
-wget -O add-akun "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/add-akun.sh"
+wget -O delete-akun "https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/delete-akun.sh"
 
 
 #
