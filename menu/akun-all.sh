@@ -323,6 +323,7 @@ echo -e "GRPC TLS       : 443" | tee -a /etc/log-create-user.log
 echo -e "*Note OPOK: opok only supports coremeta"
 echo -e "*Note SHADOWSOCKS: gunakan custom config atau plugin xray"
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+
 echo -e "Protokol VPN: TROJAN" | tee -a /etc/log-create-user.log
 echo -e "Network: WS/GRPC" | tee -a /etc/log-create-user.log
 echo -e "====== Path =======" | tee -a /etc/log-create-user.log
@@ -333,6 +334,7 @@ echo -e "====== Import Config From Clipboard =======" | tee -a /etc/log-create-u
 echo -e "Link Config WS TLS   : $trojanlinkws" | tee -a /etc/log-create-user.log
 echo -e "Link Config GRPC TLS : $trojanlinkgrpc" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+
 echo -e "Protokol VPN: SHADOWSOCKS" | tee -a /etc/log-create-user.log
 echo -e "Network: WS/GRPC" | tee -a /etc/log-create-user.log
 echo -e "Method Cipers : aes-128-gcm" | tee -a /etc/log-create-user.log
@@ -344,6 +346,7 @@ echo -e "======Custom Import Config From URL =======" | tee -a /etc/log-create-u
 echo -e "URL Custom Config WS TLS   : http://${domain}:81/ss-ws-$user.txt" | tee -a /etc/log-create-user.log
 echo -e "URL Custom Config GRPC TLS : http://${domain}:81/ss-grpc-$user.txt" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
+
 echo -e "Protokol VPN: VLESS" | tee -a /etc/log-create-user.log
 echo -e "Network: WS/GRPC" | tee -a /etc/log-create-user.log
 echo -e "====== Path =======" | tee -a /etc/log-create-user.log
