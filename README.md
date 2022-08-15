@@ -73,9 +73,6 @@ EOF
 - maka proses install akan berjalan, jangan keluar dari vps
 - jika keluar dari vps saat lagi proses install,maka akan gagal
 ```
-apt update -y
-apt upgrade -y
-```
 wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/setup.sh && chmod +x setup.sh && ./setup.sh
 ```
 6. jika sudah selesai,lalu ketik xmenu untuk menampilkan menu
