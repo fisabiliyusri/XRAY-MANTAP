@@ -122,7 +122,10 @@ xmenu
 - updatedll (untuk update sc)
 - ...
 
-# Cara Pointing Domain Di Cloudflare
-- Loading ...
-# Cara Pointing Subdomain Secara Otomatis Di Cloudflare
+# Contoh Cara Pointing Domain ke Cloudflare
+- Link:
+```
+https://youtu.be/Pwfvwy5Ghcw
+```
+# Cara Pointing Subdomain Secara Otomatis Di Cloudflare Menggunakan Script
 - Loading ...
