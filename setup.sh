@@ -34,7 +34,8 @@ echo -e "$green      Install Tools/Alat               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/adamfuadia/testxray/main/install-tools.sh && chmod +x install-tools.sh && ./install-tools.sh
+
+wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/install-tools.sh && chmod +x install-tools.sh && ./install-tools.sh
 
 #
 #install xmenu
@@ -43,7 +44,9 @@ echo -e "$green      Install xmenu               $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/adamfuadia/testxray/main/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
+
+wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/updatedll.sh && chmod +x updatedll.sh && ./updatedll.sh
+
 #
 #Instal Xray
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
@@ -51,7 +54,9 @@ echo -e "$green          Install XRAY MANTAP              $NC"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m"
 sleep 2
 clear
-wget https://raw.githubusercontent.com/adamfuadia/testxray/main/install-xray.sh && chmod +x install-xray.sh && screen -S xray ./install-xray.sh
+
+wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/install-xray.sh && chmod +x install-xray.sh && screen -S xray ./install-xray.sh
+
 #SELESAI
 echo " "
 echo "Installation has been completed!!"echo " "
