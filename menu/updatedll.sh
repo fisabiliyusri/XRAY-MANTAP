@@ -10,6 +10,7 @@ wget -O add-akun "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/ma
 wget -O delete-akun "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/delete-akun.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/xray/certv2ray.sh"
 wget -O restart-xray "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/restart-xray.sh"
+wget -O xmenu "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/xmenu.sh"
 
 #
 chmod +x xmenu
