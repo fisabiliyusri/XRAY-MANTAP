@@ -456,3 +456,15 @@ grpc_pass grpc://127.0.0.1:30310;
         }
 EOF
 #
+sleep 1
+echo -e "$yell[SERVICE]$NC Restart All service"
+systemctl daemon-reload
+sleep 1
+echo -e "[ ${green}ok${NC} ] Enable & restart xray "
+systemctl enable xray
+systemctl restart xray
+systemctl restart nginx
+systemctl enable runn
+systemctl restart runn
+#
+cd
