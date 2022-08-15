@@ -49,7 +49,7 @@ cat >/root/domain <<EOF
 mantapxsl.my.id
 EOF
 ```
-dan
+- ganti mantapxsl.my.id menjadi nama domain punya kamu
 ```
 mkdir -p /etc/xray
 cat >/etc/xray/domain <<EOF
