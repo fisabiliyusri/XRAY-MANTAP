@@ -118,6 +118,7 @@ xmenu
 ```
 7. DONE / SELESAI
 
+# Info Perbaiki / FIX
 - ***NOTE***
 - jika xray dan nginx mengalami error !
 - ketik
