@@ -1,6 +1,7 @@
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━"
 echo -e "====== XRAY MANTAP Multi Port======="
 echo -e "INFORMASI AKUN VPN XRAY"
+echo -e "IP: $MYIP"
 echo -e "Host/Domain: $domain"
 echo -e "Password/ID: $uuid"
 echo -e "====== Service Port ======="
