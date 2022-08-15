@@ -340,8 +340,8 @@ echo -e "=> WS TLS : /xrayssws" | tee -a /etc/log-create-user.log
 echo -e "=> GRPC   : ss-grpc" | tee -a /etc/log-create-user.log
 echo -e "=> OPOK   : ws://bugcom/xrayssws" | tee -a /etc/log-create-user.log
 echo -e "======Custom Import Config From URL =======" | tee -a /etc/log-create-user.log
-echo -e "URL Custom Config WS TLS   : http://${domain}:81/ss-ws-$user.txt" | tee -a /etc/log-create-user.log
-echo -e "URL Custom Config GRPC TLS : http://${domain}:81/ss-grpc-$user.txt" | tee -a /etc/log-create-user.log
+echo -e "URL Custom Config WS TLS   : http://${domain}:89/ss-ws-$user.txt" | tee -a /etc/log-create-user.log
+echo -e "URL Custom Config GRPC TLS : http://${domain}:89/ss-grpc-$user.txt" | tee -a /etc/log-create-user.log
 echo -e "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" | tee -a /etc/log-create-user.log
 
 echo -e "Protokol VPN: VLESS" | tee -a /etc/log-create-user.log
