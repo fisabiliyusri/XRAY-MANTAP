@@ -1,7 +1,13 @@
 #!/bin/bash
 # ==========================================
-# Color
-# download 
+wget -O updatedll "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/updatedll.sh"
+
+# hapus
+cd /usr/bin
+rm -rf xmenu
+rm -rf updatedll
+# download
+#
 cd /usr/bin
 wget -O xmenu "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/xmenu.sh"
 wget -O add-akun "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/add-akun.sh"
