@@ -33,17 +33,17 @@
 2. Pointing Dulu Domain Kamu, Kalo sudah pernah di pointing
    - Pergi ke dash.cloudflare.com,lalu pilih domain punya kamu, di tab TLS/SSL lalu pilih Overview, di tab TLS/SSL Harus pilih yang FULL
    - FULL (Encrypts end-to-end, using a self signed certificate on the server)✅
-   ![settinggambar1](https://github.com/fisabiliyusri/XRAY/MANTAP/blob/master/img/settinggambar1?raw=true)
-   ![settinggambar2](https://github.com/fisabiliyusri/XRAY/MANTAP/blob/master/img/settinggambar2?raw=true)
-   ![settinggambar3](https://github.com/fisabiliyusri/XRAY/MANTAP/blob/master/img/settinggambar3?raw=true)
+   ![settinggambar1](https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/img/settingambar1.jpg)
+   ![settinggambar2](https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/img/settingambar2.jpg)
+   ![settinggambar3](https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/img/settingambar3.jpg)
    - Lalu pilih Edge Certificates disini kamu harus matikan Always Use HTTPS (Harus Mati/OFF)❌
-   ![settinggambar4](https://github.com/fisabiliyusri/XRAY/MANTAP/blob/master/img/settinggambar4?raw=true)
+   ![settinggambar4](https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/img/settingambar4.jpg)
    - Buka tab Network di cloudflare kamu aktifkan WebSocket nya ✅
-   ![settinggambar5](https://github.com/fisabiliyusri/XRAY/MANTAP/blob/master/img/settinggambar5?raw=true)
-   ![settinggambar6](https://github.com/fisabiliyusri/XRAY/MANTAP/blob/master/img/settinggambar6?raw=true)
-3. Login ke VPS kamu ( wajib pake user ***root***)
-
+   ![settinggambar5](https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/img/settingambar5.jpg)
+   ![settinggambar6](https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/img/settingambar6.jpg)
+3. Setting Di Cloudflare Selesai
 # Cara Install Script Nya
+- Login ke VPS kamu ( wajib pake user ***root***)
 1. masuk ke vps lalu ketik
 ```
 sudo su
