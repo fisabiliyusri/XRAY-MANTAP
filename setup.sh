@@ -28,10 +28,10 @@ echo "   - XRAYS TROJAN WS TLS        : 443"  | tee -a log-install.txt
 echo "   - XRAYS SHADOWSOCKS WS TLS   : 443"  | tee -a log-install.txt
 echo "   - XRAYS VLESS WS TLS         : 443"  | tee -a log-install.txt
 echo "   - XRAYS VMESS WS TLS         : 443"  | tee -a log-install.txt
-echo "   - XRAYS TROJAN None TLS      : 80"  | tee -a log-install.txt
-echo "   - XRAYS SHADOWSOCKS None TLS : 80"  | tee -a log-install.txt
-echo "   - XRAYS VLESS None TLS       : 80"  | tee -a log-install.txt
-echo "   - XRAYS VMESS None TLS       : 80"  | tee -a log-install.txt
+echo "   - XRAYS TROJAN WS HTTP       : 80"  | tee -a log-install.txt
+echo "   - XRAYS SHADOWSOCKS WS HTTP  : 80"  | tee -a log-install.txt
+echo "   - XRAYS VLESS WS HTTP        : 80"  | tee -a log-install.txt
+echo "   - XRAYS VMESS WS HTTP        : 80"  | tee -a log-install.txt
 echo "   - XRAYS TROJAN GRPC          : 443"  | tee -a log-install.txt
 echo "   - XRAYS SHADOWSOCKS GRPC     : 443"  | tee -a log-install.txt
 echo "   - XRAYS VMESS GRPC           : 443"  | tee -a log-install.txt
