@@ -350,6 +350,7 @@ EOF
 
 #
 #
+cat >/etc/nginx/conf.d/xray.conf <<EOF
     server {
              listen 80;
              listen [::]:80;
@@ -449,5 +450,5 @@ grpc_set_header Host $http_host;
 grpc_pass grpc://127.0.0.1:30310;
 }
         }
-
+EOF
 #
