@@ -40,6 +40,10 @@
 - VLESS WS         : **80**
 - VLESS GRPC       : **80**
 
+# Aplikasi VPN (Android Only)
+* Link:
+https://github.com/fisabiliyusri/XRAY-FOR-ANDROID
+
 
 # OS 
 - Debian 9 (HVM)
