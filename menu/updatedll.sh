@@ -19,6 +19,7 @@ wget -O restart-xray "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTA
 wget -O xmenu "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/xmenu.sh"
 wget -O auto-pointing "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/auto-pointing.sh"
 wget -O cek-port "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/cek-port.sh"
+wget -O xmenu "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/xmenu.sh"
 
 #
 chmod +x xmenu
