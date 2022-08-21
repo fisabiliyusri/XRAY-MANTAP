@@ -1,5 +1,6 @@
 #!/bin/bash
 # ==========================================
+rm -r updatedll
 wget -O updatedll "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/updatedll.sh"
 rm -rf updatedll
 
@@ -7,6 +8,7 @@ rm -rf updatedll
 cd /usr/bin
 rm -rf xmenu
 rm -rf updatedll
+rm -r updatedll
 # download
 #
 cd /usr/bin
