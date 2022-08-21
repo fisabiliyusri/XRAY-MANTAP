@@ -20,8 +20,8 @@ echo -e "\e[1;31m     [*][*][*]======================================[*][*][*]"
 echo -e "\e[0m                                                   "
 echo -e "\e[0;37m                    Auto Script MANTAP by SL    "
 echo -e "\e[0;37m                    Service Port Yang Di Gunakan"
-echo -e "\e[0m                                                   "
 echo -e "\e[0;37m                    Port Yang Berhasil Aktif    "
+echo -e "\e[0m                                                   "
 echo -e "\e[0;37m                    Port Nginx      :  "$nginxport
 echo -e "\e[0;37m                    Port Xray       :  "$xrayport
 echo -e "\e[0;37m                    Port SlowDNS    :  "$sldnsport
@@ -34,7 +34,9 @@ echo -e "\e[0;37m                    Port OpenVPN    :  "$openvpnport
 echo -e "\e[0;37m                    Port UDPGW      :  "$udpgwport
 echo -e "\e[0;37m                    Port Squid      :  "$squidport
 echo -e "\e[0;37m                    Port CloudFront :  "$nodeproxyport
-echo -e "\e[0;37m                    *Note: Jika port nya tidak muncul"
+echo -e "\e[0m                                                   "
+echo -e "\e[0;37m                    * Info                      "
+echo -e "\e[0;37m                    * Jika port nya tidak muncul"
 echo -e "\e[0;37m                    * berarti port nya mati/OFF "
 echo -e "\e[0m                                                   "
 echo -e "\e[1;31m     [*][*][*]======================================[*][*][*]"
