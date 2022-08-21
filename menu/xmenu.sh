@@ -42,6 +42,7 @@ echo "║ 13.Hidupkan Ulang VPS     ┃ Reboot                               ║
 echo "║ 14.Keluar Dari Menu       ┃ Exit Menu                            ║"
 echo "║ 15.Info Script            ┃                                      ║"
 echo "║ 16.Auto Pointing Subdomain┃                                      ║"
+echo "║ 17.Cek Semua Layanan Port ┃ Check All Port Service               ║"
 echo "╚═════════════════════════════════════════════════════════════════╝" 
 read -p "     Select From Options [1-69 or x] :  " xmenu
 case $xmenu in 
@@ -92,6 +93,9 @@ cat /root/log-install.txt
 ;;
 16)
 auto-pointing
+;;
+17)
+cek-port
 ;;
 *)
 echo "Input The Correct Number !"
