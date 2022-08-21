@@ -1,0 +1,37 @@
+#!/bin/bash
+# Script by SL
+
+xrayport="$(netstat -ntlp | grep -i xray | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+nginxport="$(netstat -ntlp | grep -i nginx | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+sslhport="$(netstat -ntlp | grep -i sslh | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+sslhport="$(netstat -ntlp | grep -i sldns | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+opensshport="$(netstat -ntlp | grep -i ssh | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+dropbearport="$(netstat -nlpt | grep -i dropbear | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+stunnel4port="$(netstat -nlpt | grep -i stunnel | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+openvpnport="$(netstat -nlpt | grep -i openvpn | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+squidport="$(netstat -nlpt | grep -i squid | grep -i 0.0.0.0 | awk '{print $4}' | cut -d: -f2)"
+clear
+echo -e "\e[0m                                                   "
+echo -e "\e[1;31m     [*][*][*]======================================[*][*][*]"
+echo -e "\e[0m                                                   "
+echo -e "\e[0;37m                    Auto Script MANTAP by SL    "
+echo -e "\e[0m                                                   "
+echo -e "\e[0;37m                    Port Nginx      :  "$nginxport
+echo -e "\e[0;37m                    Port Xray       :  "$xrayport
+echo -e "\e[0;37m                    Port SlowDNS-S  :  "$xrayport
+echo -e "\e[0;37m                    Port SlowDNS-C  :  "$xrayport
+echo -e "\e[0;37m                    Port OpenSSH    :  "$opensshport
+echo -e "\e[0;37m                    Port Dropbear   :  "$dropbearport
+echo -e "\e[0;37m                    Port Stunnel    :  "$stunnel4port
+echo -e "\e[0;37m                    Port SSLH       :  "$sslhport
+echo -e "\e[0;37m                    Port WSP HTTP   :  "$ws-sslh
+echo -e "\e[0;37m                    Port WSP SSL    :  "$squidport
+echo -e "\e[0;37m                    Port OpenVPN    :  "$openvpnport
+echo -e "\e[0;37m                    Port UDPGW      :  "$openvpnport
+echo -e "\e[0;37m                    Port Squid      :  "$openvpnport
+echo -e "\e[0;37m                    Port CloudFront :  "$nodeproxy
+echo -e "\e[0m                                                   "
+echo -e "\e[1;31m     [*][*][*]======================================[*][*][*]"
+echo ""
+read -sp " Press ENTER to go back"
+echo ""
