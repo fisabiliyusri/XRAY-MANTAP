@@ -18,6 +18,7 @@ wget -O certv2ray "https://raw.githubusercontent.com/fisabiliyusri/Mantap/main/x
 wget -O restart-xray "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/restart-xray.sh"
 wget -O xmenu "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/xmenu.sh"
 wget -O auto-pointing "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/auto-pointing.sh"
+wget -O cek-port "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/cek-port.sh"
 
 #
 chmod +x xmenu
@@ -27,5 +28,7 @@ chmod +x updatedll
 chmod +x add-akun
 chmod +x certv2ray
 chmod +x restart-xray
+chmod +x auto-pointing
+chmod +x cek-port
 
 cd
