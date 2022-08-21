@@ -1,6 +1,7 @@
 #!/bin/bash
 # ==========================================
 wget -O updatedll "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/updatedll.sh"
+rm -rf updatedll
 
 # hapus
 cd /usr/bin
@@ -22,6 +23,8 @@ wget -O cek-port "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/ma
 wget -O xmenu "https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/menu/xmenu.sh"
 
 #
+chmod +x /usr/bin/updatedll
+chmod +x /usr/bin/xmenu
 chmod +x xmenu
 chmod +x add-akun
 chmod +x delete-akun
