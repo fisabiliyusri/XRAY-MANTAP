@@ -20,12 +20,24 @@ LIGHT='\033[0;37m'
 # =========================================
 # Getting
 MYIP=$(wget -qO- ipinfo.io/ip);
-echo "Checking VPS"
-IZIN=$(wget -qO- ipinfo.io/ip);
 clear
-mkdir /var/lib/crot;
-echo "IP=" >> /var/lib/crot/ipvps.conf
-cd
+echo -e "$ORANGE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
+echo -e "$ORANGE          • VPS SYSTEM DOMAIN •           $NC"
+echo -e "$ORANGE━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━$NC"
+echo -e ""
+read -p " Hostname / Domain: " host
+
+mkdir /etc/xray
+mkdir -p /etc/xray
+mkdir /var/lib/crot
+echo "IP=$host" > /var/lib/crot/ipvps.conf
+echo $host > /etc/xray/domain
+echo $host > /root/domain
+echo -e " [INFO] Domain Added Successfully"
+sleep 2
+echo -e " [INFO] Install Scvpn Script.."
+sleep 3
+clear
 #install tools/alat
 wget https://raw.githubusercontent.com/fisabiliyusri/XRAY-MANTAP/main/install-tools.sh && chmod +x install-tools.sh && ./install-tools.sh
 #
